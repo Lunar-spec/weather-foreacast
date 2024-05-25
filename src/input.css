@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        font-family: "Jost", sans-serif;
+        scroll-behavior: smooth;
+    }
+}
+
+*::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #06b6d4;
+    border-radius: 20px;
+}
+
+*::-webkit-scrollbar-corner {
+    background-color: #fff;
+}
