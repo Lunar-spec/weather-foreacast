@@ -135,7 +135,7 @@ const displayForecast = (data) => {
     console.log(data);
     // Displaying the fetched forecast data
     forecastDiv.innerHTML = `   
-    <p class="text-2xl font-bold text-center">Forecast</p>
+    <p class="text-2xl font-semibold text-center">Forecast</p>
     <p class="text-center pb-2">For 5 days</p>
         <div class="forecast-container w-full overflow-x-auto">
             ${data.list
