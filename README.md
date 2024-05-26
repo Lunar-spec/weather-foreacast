@@ -12,3 +12,7 @@ This project is a weather forecast application built using JavaScript, HTML, and
 - Show 5-day weather forecast
 - Responsive design for various screen sizes
 - Error handling for API requests
+- Styling using Tailwind CSS
+- Responsive design for various screen sizes
+- Error handling for API request
+- Last 5 searches
