@@ -47,15 +47,75 @@
         name="description"
         content="Weather Forecast"
     >
-    <title>
-        Weather Forecast
-    </title>
+    <title>Weather Forecast</title>
 </head>
 
-<body>
-    <h1 class="text-3xl bg-sky text-white h-screen bg-center bg-no-repeat bg-cover font-bold underline">
-        Hello world!
-    </h1>
+<body class="bg-sky h-screen bg-center bg-no-repeat bg-cover flex items-center justify-center">
+    <section class="text-white backdrop-blur-md bg-white/20 shadow-black/25 shadow-lg px-4 py-2 w-3/4 rounded-sm">
+        <div class="flex items-center flex-col justify-center md:flex-row gap-4 md:justify-between">
+            <h1 class="lg:text-4xl text-2xl font-semibold">Weather Forecast</h1>
+            <div class="flex flex-col justify-end items-center gap-2">
+                <div class="flex gap-2 items-center justify-center">
+                    <!-- Search -->
+                    <form
+                        id="searchForm"
+                        class="flex items-center bg-white/20 rounded-full px-2 py-1"
+                    >
+                        <input
+                            type="text"
+                            id="city"
+                            placeholder="Search..."
+                            class="px-2 py-1 bg-transparent focus-visible:outline-none placeholder:text-white"
+                        >
+                        <button
+                            type="submit"
+                            id="searchButton"
+                            class="cursor-pointer hover:bg-white/30 px-2 py-1 rounded-full"
+                        >
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                    <span>
+                        <hr class="w-[2px] bg-white/70 h-8">
+                    </span>
+                    <div>
+                        <!-- Current Location -->
+                        <button
+                            id="currentLocation"
+                            class="cursor-pointer px-3 py-1.5 flex items-center bg-gradient-to-r from-yellow-400 to-amber-500 rounded-full"
+                        >
+                            <i class="fa-solid fa-location-dot text-xl"></i>
+                        </button>
+                    </div>
+                </div>
+                <div
+                    id="recentSearches"
+                    class="flex gap-2"
+                >
+                    <!-- Recent Searches here -->
+                </div>
+            </div>
+        </div>
+        <hr class="my-2 bg-white h-[1.5px]">
+        <div class="flex flex-col justify-center items-center gap-4">
+            <div
+                id="weather"
+                class="flex-between items-center w-full"
+            >
+                <!-- Weather Data here -->
+            </div>
+            <div
+                id="forecast"
+                class="w-full"
+            >
+                <!-- Forecast Data here -->
+            </div>
+        </div>
+    </section>
+    <script
+        type="module"
+        src="script.js"
+    ></script>
 </body>
 
 </html>

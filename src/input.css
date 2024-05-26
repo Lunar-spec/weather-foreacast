@@ -9,6 +9,24 @@
     }
 }
 
+@layer utilities {
+    .flex-center {
+        @apply flex justify-center items-center
+    }
+
+    .flex-between {
+        @apply flex justify-between
+    }
+
+    .forecast-card {
+        @apply flex flex-col items-start bg-white/10 backdrop-blur-lg md:w-64
+    }
+
+    .forecast-container {
+        @apply flex gap-4 xl:items-center xl:justify-center overflow-x-auto px-4 py-2
+    }
+}
+
 *::-webkit-scrollbar {
     width: 5px;
     height: 5px;
@@ -19,10 +37,10 @@
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: #06b6d4;
+    background-color: #fd9610d7;
     border-radius: 20px;
 }
 
 *::-webkit-scrollbar-corner {
-    background-color: #fff;
+    background-color: transparent;
 }
