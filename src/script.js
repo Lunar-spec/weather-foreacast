@@ -162,7 +162,7 @@ const displayForecast = (data) => {
 
 const displayError = (message) => {
     weatherDiv.innerHTML = `
-        <div class="text-white text-center w-full font-semibold text-2xl">
+        <div class="text-red-500 text-center w-full font-semibold text-2xl">
             <p>${message}</p>
         </div>
     `;
