@@ -16,3 +16,9 @@ This project is a weather forecast application built using JavaScript, HTML, and
 - Responsive design for various screen sizes
 - Error handling for API request
 - Last 5 searches
+
+## Usage
+
+    *Please make sure you have "live server" extension installed for running the application.*
+
+    Once you have installed live server, open this project in vscode and click on "Go Live" button in the bottom right corner, and select src from there.
